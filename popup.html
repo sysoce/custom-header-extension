@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Custom Headers</title>
+  <style>
+    body { 
+      width: 250px; 
+      padding: 10px; 
+      font-family: Arial, sans-serif; 
+    }
+    .header-list { 
+      margin-bottom: 15px; 
+    }
+    .header-item { 
+      display: flex; 
+      justify-content: space-between; 
+      margin: 5px 0; 
+      padding: 3px;
+    }
+    .header-item:hover {
+      background-color: #f5f5f5;
+    }
+    .remove-btn { 
+      color: red; 
+      cursor: pointer; 
+      margin-left: 10px;
+    }
+    form { 
+      display: flex; 
+      flex-direction: column;
+      gap: 8px;
+    }
+    input {
+      padding: 6px;
+      border: 1px solid #ddd;
+      border-radius: 3px;
+    }
+    button {
+      padding: 6px;
+      background-color: #0078d4;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #006cbd;
+    }
+  </style>
+</head>
+<body>
+  <h3>Custom Headers</h3>
+  <div class="header-list" id="headerList"></div>
+  <form id="addHeaderForm">
+    <input class="add-input" type="text" id="headerName" placeholder="Header name" required>
+    <input type="text" id="headerValue" placeholder="Header value" required>
+    <button type="submit">Add</button>
+  </form>
+
+  <script src="popup.js"></script>
+</body>
+</html>
