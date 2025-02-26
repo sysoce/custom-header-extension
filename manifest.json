@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Custom Header Extension",
-  "description": "Add custom headers to requests",
+  "description": "A Firefox extension that allows you to add custom headers to HTTP requests for specific domains.",
   "version": "1.0",
   "permissions": [
     "storage",
